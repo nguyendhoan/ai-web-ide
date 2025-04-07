@@ -64,7 +64,7 @@ fi
 
 echo "Đang khởi động ứng dụng..."
 if [ $USE_NPM -eq 0 ]; then
-    pnpm run dev
+    pnpm run dev --host
     if [ $? -ne 0 ]; then
         echo "Lỗi khi dùng pnpm, thử dùng npm thay thế..."
         npm run dev

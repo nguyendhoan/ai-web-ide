@@ -78,7 +78,7 @@ if not exist "node_modules" (
 
 echo Dang khoi dong ung dung...
 if %USE_NPM%==0 (
-    call pnpm run dev
+    call pnpm run dev --host
     if %errorlevel% neq 0 (
         echo "Loi khi dung pnpm, thu dung npm thay the..."
         call npm run dev
